@@ -8,5 +8,4 @@
   <!-- <a class="btn btn-primary" href="/players">List All Players</a> -->
   <%= link("Create Player Account", to: "/players/new", class: "btn btn-success") %>
   <%= link("List all Players", to: "/players", class: "btn btn-primary") %>
-  <!-- <%= IO.inspect("no banana") %> -->
 </div>
