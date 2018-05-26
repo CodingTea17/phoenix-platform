@@ -7,13 +7,19 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Hello Platform!</title>
+    <title>Powered by Phoenix</title>
     <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
   </head>
 
   <body>
     <div class="container">
       <header class="header" style="text-align: center">
+        <nav role="navigation">
+          <ul class="nav nav-pills pull-right">
+            <%= link "Sign Up", to: player_path(@conn, :new), class: "btn btn-sm btn-success" %>
+            <%= link "Sign In", to: player_session_path(@conn, :new), class: "btn btn-sm btn-primary" %>
+          </ul>
+        </nav>
         <span class="logo"></span>
       </header>
 
